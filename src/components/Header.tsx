@@ -11,7 +11,8 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <img
-            src="https://revaahomes.com/wp-content/uploads/2025/11/Landing-Page-Logo_11zon-10.webp" alt="Vihaan Eleganza"
+            src="https://revaahomes.com/wp-content/uploads/2025/11/Landing-Page-Logo_11zon-10.webp" 
+            alt="Lodha Villa Royale Palava - Premium Luxury Villas in Dombivli West"
             className="h-10 lg:h-12 object-contain"
           />
 
@@ -24,11 +25,11 @@ const Header = () => {
 
           <div className="flex items-center gap-4">
             <a
-              href="tel:09403891977"
+              href="tel:+91 9773069318"
               className="hidden sm:inline-flex bg-[#A38022] text-white px-5 py-2.5 rounded-md text-sm font-medium hover:bg-[#A38022] transition"
               style={{ letterSpacing: "0.5px" }}
             >
-              09403891977
+              +91 9773069318
             </a>
 
             <button
@@ -55,6 +56,7 @@ const Header = () => {
         <div className="flex items-center justify-between p-5 border-b">
           <img
             src="https://revaahomes.com/wp-content/uploads/2025/02/Vihaan-Eleganza-Nerul-Logo.png"
+            alt="Lodha Villa Royale Palava Logo - Luxury Real Estate Developer"
             className="h-9"
           />
           <button
@@ -72,7 +74,7 @@ const Header = () => {
           <a className="hover:text-[#A38022]">Virtual Visit</a>
 
           <a
-            href="tel:09403891977"
+            href="tel:+91 9773069318"
             className="mt-4 bg-[#CE811C] text-white text-center py-3 rounded-md font-semibold"
             style={{ letterSpacing: "0.5px" }}
           >

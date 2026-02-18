@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <section className="bg-gradient-to-br from-[#EFE3D1] via-[#E7D7C2] to-[#D8C2A3] py-8 px-4 lg:px-8">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div
+        <article
           className={`bg-white rounded-lg shadow-lg p-6 flex flex-col transform transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           style={{ transitionDelay: "100ms" }}
@@ -44,17 +44,17 @@ const Hero = () => {
               BOOKING OPEN
             </div>
 
-            <div className="text-center mb-4">
-              <h2 className="text-3xl font-semibold text-gray-900 mb-2 animate-fade-in tracking-wider">
+            <header className="text-center mb-4">
+              <h1 className="text-3xl font-semibold text-gray-900 mb-2 animate-fade-in tracking-wider">
                 Lodha Villa <br /> Royale Palava
-              </h2>
-              <p className="text-xl font-semibold text-gray-800 mb-1 tracking-wider">
+              </h1>
+              <h2 className="text-xl font-semibold text-gray-800 mb-1 tracking-wider">
                 Lodha Group
-              </p>
+              </h2>
               <p className="text-md text-black font-medium tracking-wider mb-2">
                 Dombivli West, Thane
               </p>
-            </div>
+            </header>
 
             <div className="flex items-center justify-center gap-3 text-sm text-gray-800 mb-6 flex-wrap">
               <div className="flex items-center gap-2 hover:scale-105 transition-transform">
@@ -106,9 +106,9 @@ const Hero = () => {
           <button className="bg-[#A38022] cursor-pointer shadow-lg text-white font-bold py-3.5 rounded-lg transition-all hover:bg-[#B87116] hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2">
             Download Brochure 📄
           </button>
-        </div>
+        </article>
 
-        <div
+        <figure
           className={`relative bg-white rounded-lg shadow-lg overflow-hidden flex items-center justify-center min-h-[400px] lg:min-h-[600px] transform transition-all duration-700 ${isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
             }`}
           style={{ transitionDelay: "300ms" }}
@@ -118,12 +118,16 @@ const Hero = () => {
               <img
                 key={index}
                 src={image}
-                alt={`Vihaan Eleganza Building ${index + 1}`}
+                alt={`Lodha Villa Royale Palava - Luxury Villa View ${index + 1}`}
                 className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${currentSlide === index ? "opacity-100" : "opacity-0"
                   }`}
               />
             ))}
           </div>
+
+          <figcaption className="sr-only">
+            Luxury villa images showcasing Lodha Villa Royale Palava's architectural beauty and amenities
+          </figcaption>
 
           {/* Navigation Arrows */}
           <button
@@ -152,10 +156,10 @@ const Hero = () => {
               />
             ))}
           </div>
-        </div>
+        </figure>
 
         {/* RIGHT CARD */}
-        <div
+        <article
           className={`bg-white rounded-lg shadow-lg p-6 flex flex-col transform transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           style={{ transitionDelay: "500ms" }}
@@ -165,14 +169,14 @@ const Hero = () => {
               PROJECT HIGHLIGHTS
             </div>
 
-            <div className="text-center mb-6">
-              <p className="text-xl font-bold text-gray-800 mb-1" style={{ letterSpacing: "0.5px" }}>
+            <header className="text-center mb-6">
+              <h3 className="text-xl font-bold text-gray-800 mb-1" style={{ letterSpacing: "0.5px" }}>
                 LODHA GROUP
-              </p>
+              </h3>
               <p className="text-md text-black font-medium" style={{ letterSpacing: "0.5px" }}>
                 Dombivli West, Thane
               </p>
-            </div>
+            </header>
 
             <ul className="space-y-3 text-sm text-gray-800 mb-6">
               {[
@@ -215,7 +219,7 @@ const Hero = () => {
               <span className="font-semibold">[Limited Time]</span>
             </p>
           </div>
-        </div>
+        </article>
       </div>
 
       <style jsx>{`
